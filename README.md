@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>تواصل معي على واتساب</title>
+
+  <!-- كود Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8258987336700999"
+     crossorigin="anonymous"></script>
+
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,12 +45,17 @@
     button:hover {
       background-color: #1ebe5d;
     }
+    .ad-container {
+      margin: 30px auto;
+      max-width: 500px;
+    }
   </style>
 </head>
 <body>
 
   <h1>املأ بياناتك للتواصل معي</h1>
 
+  <!-- نموذج البيانات -->
   <form onsubmit="goToWhatsApp(); return false;">
     <input type="text" id="name" placeholder="الاسم الكامل" required>
     <input type="email" id="email" placeholder="البريد الإلكتروني" required>
@@ -53,6 +63,19 @@
     <textarea id="message" rows="4" placeholder="اكتب رسالتك أو استفسارك هنا..."></textarea>
     <button type="submit">إرسال والتواصل على واتساب</button>
   </form>
+
+  <!-- إعلان AdSense -->
+  <div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8258987336700999"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
 
   <script>
     function goToWhatsApp() {
